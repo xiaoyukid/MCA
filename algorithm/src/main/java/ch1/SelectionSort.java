@@ -6,7 +6,7 @@ package ch1;
  * @author yuchao
  * @create 2021-08-08-9:34 上午
  */
-public class Sort {
+public class SelectionSort {
 
 
     public static void selectionSort(int[] arr) {
@@ -29,11 +29,40 @@ public class Sort {
     }
 
 
-    public static void bubbleSort() {
+    public static void bubbleSort(int[] arr) {
+
+        if (arr == null || arr.length < 2) {
+            return;
+        }
+        // 0 ~ N-1
+        // 0 ~ N-2
+        // 0 ~ N-3
+        for (int i = arr.length - 1; i > 0; i--) {
+
+            for (int j = 0; j < i; j++) {
+
+                if (arr[i] > arr[i + 1]) {
+                    swap(arr, i, i + 1);
+                }
+
+            }
+        }
 
     }
 
-    public static void insertSort() {
+    public static void insertSort(int[] arr) {
+
+        if (arr == null || arr.length < 2) {
+            return;
+        }
+        // 0 ~ i 做到有序
+        for (int i = 1; i < arr.length; i++) {
+
+            for (int j = i - 1; j >= 0 && arr[j] > arr[j + 1]; j--) {
+                swap(arr, j, j + 1);
+            }
+
+        }
 
     }
 
