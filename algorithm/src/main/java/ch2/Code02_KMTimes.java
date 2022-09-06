@@ -53,7 +53,7 @@ public class Code02_KMTimes {
 
     public static void main(String[] args) {
 
-        int[] arr = new int[]{2, 2, 1, 1, 1, 1};
+        int[] arr = new int[]{2, 2, 1, 1, 1, 1, 0, 0, 0, 0};
 
         System.out.println(onlyKTimes(arr, 2, 4));
 
