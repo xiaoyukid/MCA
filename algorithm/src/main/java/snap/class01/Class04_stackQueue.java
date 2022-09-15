@@ -63,9 +63,7 @@ public class Class04_stackQueue {
 
         System.out.println(stackQueue.deQueue());
 
-
         System.out.println("-------------------------------");
-
         stackQueue.enQueue(3);
         stackQueue.enQueue(4);
         stackQueue.enQueue(5);
