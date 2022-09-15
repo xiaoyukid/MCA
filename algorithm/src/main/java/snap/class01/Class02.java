@@ -91,8 +91,9 @@ public class Class02 {
         return -1;
     }
 
+    // [-Range, Range]
     public static int randomNumber(int range) {
-        return (int) (Math.random() * range) + 1;
+        return ((int) (Math.random() * range) + 1) - ((int) (Math.random() * range) + 1);
     }
 
     public static int[] randomArray(int maxKind, int range, int k, int m) {
